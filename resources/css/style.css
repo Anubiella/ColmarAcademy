@@ -1,0 +1,39 @@
+/*GENERAL PAGE SETUP*/
+html{
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+div{
+	border: 1px solid black;
+}
+
+/*HEADER SECTION*/
+header{
+	width: 100%;
+	height: 64px;
+	position: fixed;
+	z-index: 1;
+	border-bottom: 1px solid black;
+}
+.headercont{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 32px; 
+	margin: 16px 24px;
+}
+.headercont ul li{
+	display: inline-block;
+	padding: 0 8px;
+}
+.logo{
+	display: flex;
+	align-items: center;
+}
+.logo img{
+	height: 100%;
+}
+.logonav{
+	display: flex;
+	align-items: center;
+}
