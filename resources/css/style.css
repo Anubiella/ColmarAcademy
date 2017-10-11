@@ -102,24 +102,26 @@ header{
 	background-color: white;
 	padding-bottom: 32px;
 }
-.articles .mainart{
+.articles .mainart, .thesiscont .mainart{
 	width: 60%;
 	padding: 32px 24px;
+	text-align: left;
 }
-.articles .mainart .mainartimg img{
+.articles .mainart .mainartimg img, .thesiscont .mainart img, .mainart video{
 	width: 100%;
 }
-.articles .sidecol{
+.articles .sidecol, .thesis .sidecol{
 	width: 40%;
 	border-left: 1px solid lightgrey;
 	display: flex;
 	flex-direction: column;
 }
-.articles .sidecol .sideart{
+.articles .sidecol .sideart, .thesis .sidecol .sideart{
 	width: 100%;
 	display: flex;
 	align-items: center;
 	border: 1px solid lightgrey;
+	padding: 16px 16px;
 }
 .sideart img{
 	width: 35%;
@@ -132,7 +134,7 @@ header{
 	justify-content: center;
 	align-items: left;
 	text-align: left;
-	padding-left: 20px;
+	padding-left: 16px;
 }
 /*LEARN SECTION*/
 .learn
@@ -169,4 +171,19 @@ header{
 .learntext span{
 	display: block;
 	margin: 8px 0;
+}
+/*THESIS SECTION*/
+.thesis
+{	
+	padding: 32px 0;
+	text-align: center;
+	background-color: white;
+}
+.thesis h2{
+	margin-bottom: 32px;
+}
+.thesiscont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
