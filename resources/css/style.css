@@ -240,9 +240,6 @@ header .logo{
 	padding-right: 0;
 	padding-bottom: 0;
 }
-#darkback{
-	background-color: lightgrey;
-}
 /*PHONE SCREEN VERSION*/
 @media only screen and (max-width: 730px){
 
@@ -294,9 +291,6 @@ header .logo{
 	.sideart .sideimg .hiddenimg {
 		width: 100%;
 		display: block;
-	}
-	#darkback{
-		background-color: white;
 	}
 	.sideart .sidetext{
 		width: 100%;
