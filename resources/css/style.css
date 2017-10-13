@@ -4,9 +4,9 @@ body{
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	line-height: 1.3;
 }
-div{
+/*div{
 	border: 1px solid black;
-}
+}*/
 h1, h2, h3{
 	font-weight: bold;
 }
@@ -218,10 +218,10 @@ header .logo{
 /*PHONE SCREEN VERSION*/
 @media only screen and (max-width: 720px){
 
-	.logonav .hiddenmenu{
+	header .logonav .hiddenmenu{
 		display: inline-block;
 	}
-	.logo, .logonav .deskmenu{
+	header .logo, header .logonav .deskmenu{
 		display: none;
 	}
 	.headercont{
@@ -255,14 +255,53 @@ header .logo{
 	}
 	.articles .sidecol .sideart{
 		flex-direction: column;
+		padding-bottom: 48px;
 	}
-	.sideart .sideimg .deskimg{
+	.sideart .sideimg .deskimg, .learn .deskimg, .learncont span, .learncont p{
 		display: none;
 	}
-	.sideart .sideimg .hiddenimg{
-		display: block;
-	}
-	.sideart .sideimg .hiddenimg img{
+	.sideart .sideimg{
 		width: 100%;
 	}
+	.sideart .sideimg .hiddenimg {
+		width: 100%;
+		display: block;
+	}
+	#darkback{
+		background-color: white;
+	}
+	.sideart .sidetext{
+		width: 100%;
+	}
+	.learn{
+		padding: 16px 16px;
+	}
+	.learn h2{
+		margin-bottom: 16px;
+	}
+	.learn .learngallery{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.learn .learncont{
+		width: 100%;
+		background-color: grey;
+		margin: 4px 0;
+	}
+	.thesiscont{
+		margin-top: 16px;
+		padding: 0 0;
+	}
+	.thesiscont .mainart{
+		width: 100%;
+		padding: 0 0;
+	}
+	.thesis .sidecol, .mainart h3, .mainart p{
+		display: none;
+	}
+	.main .thesis{
+		padding-bottom: 24px;
+	}
+
 }
