@@ -4,9 +4,6 @@ body{
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	line-height: 1.3;
 }
-/*div{
-	border: 1px solid black;
-}*/
 h1, h2, h3{
 	font-weight: bold;
 }
@@ -25,7 +22,6 @@ header{
 	height: 64px;
 	position: fixed;
 	z-index: 1;
-	background-color: white;
 }
 .headercont, .footercont{
 	display: flex;
@@ -33,10 +29,17 @@ header{
 	justify-content: space-between;
 	height: 32px; 
 	padding: 16px 24px;
+	background-color: rgb(172, 27, 38);
+	color: white;
 }
 .headercont ul li, .footercont ul li{
 	display: inline-block;
 	padding: 0 8px;
+	transition: top 3s ease-in-out;
+}
+.headercont ul li:hover, .footercont ul li:hover{
+	position: relative;
+	top: 10px;
 }
 .logo, .logonav{
 	display: flex;
@@ -57,8 +60,8 @@ header .logo{
 /*MAIN SECTION*/
 .main{
 	position: relative;
-	top:65px;
-	background-color: lightgrey;
+	top:64px;
+	background-color: white;
 }
 /*BANNER SECTION*/
 .banner, .articles, .thesiscont{
@@ -68,6 +71,8 @@ header .logo{
 }
 .banner{
 	align-items: center;
+	background-color: rgb(63,148,139);
+	color: white;
 }
 .banner .bannerimg{
 	width: 60%;
@@ -83,21 +88,27 @@ header .logo{
 	margin-right: 24px;
 }
 .bannertext .bannerbtn{
-	background-color: grey;
+	background-color: rgb(172, 27, 38);
 	text-align: center;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	color: white;
 	width: 100%;
 }
+.bannerbtn:hover{
+	background-color: white;
+	color: rgb(172, 27, 38);
+}
 .banner .bannertext h1{
 	margin-bottom: 32px;
 }
-.banner .bannertext h3{
+.bannertext h3{
 	margin-bottom: 24px;
+	color: black;
 }
 #banbtn h3{
 	font-weight: normal;
+	color: white;
 	margin-bottom: 0;
 }
 /* ARTICLES SECTION*/
@@ -112,6 +123,7 @@ header .logo{
 }
 .articles .mainart h2{
 	padding-bottom: 24px;
+	color: rgb(172, 27, 38);
 }
 .articles .mainart .mainartimg img, .thesiscont .mainart img, .mainart video{
 	width: 100%;
@@ -160,15 +172,17 @@ header .logo{
 	padding-bottom: 24px;
 }
 .sidetext .more{
-	color: blue;
+	color: rgb(63,148,139);
 }
 /*LEARN SECTION*/
 .learn{	
 	padding: 32px 72px;
 	text-align: center;
+	background-color: rgb(63,148,139);
 }
 .learn h2{
 	margin-bottom: 32px;
+	color: white;
 }
 .learngallery{
 	display: flex;
@@ -183,6 +197,10 @@ header .logo{
 	background-color: white;
 	text-align: left;
 	margin: 16px 16px;
+}
+.learn .learncont:hover{
+	position: relative;
+	top: 5px;
 }
 .learncont img{
 	display: block;
@@ -206,6 +224,13 @@ header .logo{
 }
 .thesis h3{
 	margin-bottom: 8px;
+	color: rgb(172, 27, 38);
+}
+.thesis h2{
+	color: rgb(172, 27, 38);
+}
+.sidecol .sidetext h3{
+	color: black;
 }
 .thesiscont{
 	padding-top: 32px;
@@ -216,7 +241,7 @@ header .logo{
 	background-color: lightgrey;
 }
 /*PHONE SCREEN VERSION*/
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 730px){
 
 	header .logonav .hiddenmenu{
 		display: inline-block;
@@ -286,7 +311,7 @@ header .logo{
 	}
 	.learn .learncont{
 		width: 100%;
-		background-color: grey;
+		background-color: white;
 		margin: 4px 0;
 	}
 	.thesiscont{
@@ -304,4 +329,7 @@ header .logo{
 		padding-bottom: 24px;
 	}
 
+	.footercont .logonav{
+		display: none;
+	}
 }
