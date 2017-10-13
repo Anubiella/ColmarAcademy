@@ -145,6 +145,9 @@ header .logo{
 	border: 1px solid lightgrey;
 	padding: 16px 16px;
 }
+.articles .sidecol .sideart:hover, .thesis .sidecol .sideart:hover{
+	background-color: lightgrey;
+}
 .sideart .sideimg .hiddenimg{
 	display: none;
 }
