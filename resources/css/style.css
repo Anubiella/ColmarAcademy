@@ -1,33 +1,30 @@
 /*GENERAL PAGE SETUP*/
-html{
+body{
 	font-size: 16px;
 	font-family: Arial, sans-serif;
+	line-height: 1.3;
 }
 div{
 	border: 1px solid black;
 }
+h1, h2, h3{
+	font-weight: bold;
+}
 h1{
 	font-size: 3rem;
-	font-weight: bold;
-	line-height: 1.3;
 }
 h2{
 	font-size: 2.2rem;
-	font-weight: bold;
-	line-height: 1.3;
 }
 h3{
 	font-size: 1.75rem;
-	font-weight: bold;
-	line-height: 1.3;
 }
-/*HEADER SECTION*/
+/*HEADER AND FOOTER STYLES*/
 header{
 	width: 100%;
 	height: 64px;
 	position: fixed;
 	z-index: 1;
-	border-bottom: 1px solid black;
 	background-color: white;
 }
 .headercont, .footercont{
@@ -41,16 +38,12 @@ header{
 	display: inline-block;
 	padding: 0 8px;
 }
-.logo{
+.logo, .logonav{
 	display: flex;
 	align-items: center;
 }
 .logo img{
 	height: 100%;
-}
-.logonav{
-	display: flex;
-	align-items: center;
 }
 /*MAIN SECTION*/
 .main{
@@ -60,11 +53,13 @@ header{
 	width: 100%;
 }
 /*BANNER SECTION*/
-.banner{
+.banner, .articles, .thesiscont{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	padding: 32px 24px;
+}
+.main .banner{
+	align-items: center;
 }
 .banner .bannerimg{
 	width: 60%;
@@ -95,20 +90,25 @@ header{
 	margin-bottom: 0;
 }
 /* ARTICLES SECTION*/
-.articles{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.main .articles{
 	background-color: white;
-	padding-bottom: 32px;
+	padding-right: 0;
 }
 .articles .mainart, .thesiscont .mainart{
 	width: 60%;
-	padding: 32px 24px;
 	text-align: left;
+	padding-right: 24px;
+}
+.articles .mainart h2{
+	padding-bottom: 24px;
 }
 .articles .mainart .mainartimg img, .thesiscont .mainart img, .mainart video{
 	width: 100%;
+	margin-bottom: 24px;
+}
+.mainart .author{
+	font-size: 0.8rem;
+	margin-top: 20px;
 }
 .articles .sidecol, .thesis .sidecol{
 	width: 40%;
@@ -135,9 +135,18 @@ header{
 	text-align: left;
 	padding-left: 16px;
 }
+.sidetext span{
+	padding-top: 8px;
+}
+#quote{
+	font-style: italic;
+	padding-bottom: 24px;
+}
+.sidetext .more{
+	color: blue;
+}
 /*LEARN SECTION*/
-.learn
-{	
+.learn{	
 	padding: 32px 72px;
 	text-align: center;
 }
@@ -178,11 +187,14 @@ header{
 	text-align: center;
 	background-color: white;
 }
-.thesis h2{
-	margin-bottom: 32px;
+.thesis h3{
+	margin-bottom: 8px;
 }
 .thesiscont{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-top: 32px;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+#darkback{
+	background-color: lightgrey;
 }
